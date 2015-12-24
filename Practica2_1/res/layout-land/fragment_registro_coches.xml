@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android" 
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="15dp"
+    android:orientation="vertical" >
+    
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="15dp"
+        android:text="Alta de Vehiculos..." />
+    
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:stretchColumns="*">
+        
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <EditText
+		        android:layout_width="match_parent"
+		        android:layout_height="wrap_content"
+		        android:hint="Nº de Bastidor"
+		        android:id="@+id/editBastidor"
+		        android:layout_marginTop="5dp"
+		        android:layout_marginRight="10dp" />
+            
+            <EditText
+		        android:layout_width="match_parent"
+		        android:layout_height="wrap_content"
+		        android:hint="Matrícula"
+		        android:id="@+id/editMatricula"
+		        android:layout_marginTop="5dp"
+		        android:layout_marginLeft="10dp" />
+        </TableRow>
+        
+        <TableRow android:layout_width="wrap_content" >
+
+            <EditText
+		        android:layout_width="match_parent"
+		        android:layout_height="wrap_content"
+		        android:hint="Propietario"
+		        android:id="@+id/editPropietario"
+		        android:layout_marginTop="5dp"
+		        android:layout_marginRight="10dp" />
+		    
+		    <EditText
+		        android:layout_width="match_parent"
+		        android:layout_height="wrap_content"
+		        android:hint="Marca"
+		        android:id="@+id/editMarca"
+		        android:layout_marginTop="5dp"
+		        android:layout_marginLeft="10dp" />
+        </TableRow>
+        
+        <TableRow>
+            <EditText
+		        android:layout_width="match_parent"
+		        android:layout_height="wrap_content"
+		        android:hint="Modelo"
+		        android:id="@+id/editModelo"
+		        android:layout_marginTop="5dp"
+		        android:layout_marginRight="10dp" />
+		    
+		    <Spinner
+		        android:id="@+id/spinnerCombustible"
+		        android:layout_width="match_parent"
+		        android:layout_marginTop="5dp"
+		        android:hint="Combustible"
+		        android:layout_height="wrap_content"
+		        android:layout_marginLeft="10dp"
+		        android:entries="@array/combustibles" />
+        </TableRow>
+        
+        <TableRow>
+
+	        <EditText 
+	            android:layout_height="wrap_content"
+	            android:layout_width="match_parent"
+	            android:hint="CV"
+	            android:layout_marginTop="15dp"
+	            android:inputType="number"
+	            android:id="@+id/EditCV"/>
+        
+	        <EditText
+	            android:layout_height="wrap_content"
+	            android:layout_width="match_parent"
+	            android:hint="CC"
+	            android:layout_marginTop="15dp"
+	            android:inputType="number"
+	            android:id="@+id/EditCC" />
+
+        </TableRow>
+    </TableLayout>
+    
+
+    <Button
+        android:id="@+id/btnRegistrarVehiculo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Registrar Vehiculo"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="7dp" />
+    
+</LinearLayout>
+</ScrollView>

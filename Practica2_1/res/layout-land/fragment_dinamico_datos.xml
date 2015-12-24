@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android" 
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    
+<LinearLayout
+    android:id="@+id/LinearLayout1"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:padding="15dp" >
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:typeface="serif"
+        android:textSize="14sp"
+        android:textStyle="bold|italic|"
+        android:layout_gravity="center"
+        android:text="Introduce tus datos de acceso:" />
+    
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:stretchColumns="*">
+        <TableRow>
+            <TextView
+		        android:id="@+id/textView2"
+		        android:layout_width="match_parent"
+		        android:layout_height="wrap_content"
+		        android:typeface="sans"
+		        android:textStyle="italic"
+		        android:text=" · Nombre de usuario: " />
+		    
+		    <EditText
+		        android:id="@+id/editUser"
+		        android:layout_width="match_parent"
+		        android:layout_height="wrap_content" />
+        </TableRow>
+        
+        <TableRow>
+            <TextView
+		        android:id="@+id/texView3"
+		        android:layout_width="match_parent"
+		        android:layout_height="wrap_content"
+		        android:typeface="sans"
+		        android:textStyle="italic"
+		        android:text=" · Contraseña: " />
+		    
+		    <EditText
+		        android:id="@+id/editPass"
+		        android:layout_width="match_parent"
+		        android:layout_height="wrap_content"
+		        android:inputType="textPassword" />
+        </TableRow>
+        
+        <TableRow>
+             <TextView
+		        android:id="@+id/textView4"
+		        android:layout_width="match_parent"
+		        android:layout_height="wrap_content"
+		        android:typeface="sans"
+		        android:textStyle="italic"
+		        android:layout_gravity="left"
+		        android:text=" · Dirección de Red: "/>
+		    
+		    <EditText
+		        android:id="@+id/editRed"
+		        android:layout_width="match_parent"
+		        android:layout_height="wrap_content" />
+        </TableRow>
+        
+        <TableRow>
+            <TextView
+		        android:id="@+id/textView5"
+		        android:layout_width="match_parent"
+		        android:layout_height="wrap_content"
+		        android:typeface="sans"
+		        android:textStyle="italic"
+		        android:text=" · Puerto: " />
+		    
+		    <EditText
+		        android:id="@+id/editPuerto"
+		        android:numeric="integer"
+		  		android:inputType="number"
+		        android:layout_width="match_parent"
+		        android:layout_height="wrap_content" />
+        </TableRow>
+    </TableLayout>
+    
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:stretchColumns="*">
+        
+        <Button
+	        android:id="@+id/button$fragment_dinamico_datos$ActivityPasoParametros"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:layout_marginTop="15dp"
+	        android:layout_marginLeft="45dp"
+	        android:layout_marginRight="45dp"
+	        android:text="Inicio de Sesión"/>
+	     
+	     <TextView 
+	         android:layout_width="wrap_content"
+	         android:layout_height="wrap_content"
+	         android:text="Error de Conexion"
+	         android:layout_gravity="center_horizontal"
+	         android:id="@+id/txt_estadioConexion"/>
+    </TableLayout>
+    
+
+</LinearLayout>
+
+</ScrollView>
