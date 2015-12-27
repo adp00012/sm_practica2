@@ -1,0 +1,138 @@
+<!DOCTYPE html> <!--Indica que se va a utilizar html5-->
+
+<html lang="es">
+
+	<head>
+		<meta charset="UTF-8">
+
+		<!--Meta realizado para que se vea bien en un telefono movil-->
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+		<title>Instrucciones Matriculacion</title>
+		<!--CSS para normalizar en todos los navegadores-->
+		<link rel="stylesheet" href="css/normalize.css">
+		<!--CSS que hemos generado nosotros-->
+		<link rel="stylesheet" href="css/estilo.css">
+		<!--JavaScript para que todos los navegadores cojan las etiquetas modernas-->
+		<script src="js/modernizr-custom.js"></script>
+		<!--Icono Favicon-->
+		<link rel="shortcut icon" href="imagenes/logo_adcm_3.png" type="image/x-icon">
+		<!-- CSS que incluye la fuente que utilizamos en nuestra pagina web de google fonts-->
+		<link href='https://fonts.googleapis.com/css?family=Gochi+Hand' rel='stylesheet' type='text/css'>
+	</head>
+
+	<body>
+		<header>
+			<figure>
+				<img src="imagenes/logo_adcm_3.png" alt="">
+			</figure>
+			<h1>Google Play</h1>
+			<nav>
+				<div>
+					<a href="index.html"><img src="imagenes/home.png" alt=""></a>
+				</div>
+				<ul>
+					<li><a href="pantallaInicio.html">Pantalla Inicio</a></li>
+					<li><a href="loginUsuario.html">Login Usuario</a></li>
+					<li><a href="registroVehiculos.html">Registro Vehiculos</a></li>
+					<li><a href="barraTareas.html">Barra de Tareas</a></li>
+					<li><a class="seleccionada" href="recomendacionesGoogle.html">Google Play</a></li>
+				</ul>
+			</nav>
+		</header>
+
+		<div id="contenedor">
+			<div id="slider">
+				<div class="elemento">
+					<img src="imagenes/1.png" >
+				</div>
+
+				<div class="elemento">
+					<img src="imagenes/2.png">
+				</div>
+
+				<div class="elemento">
+					<img src="imagenes/3.png">
+				</div>
+				<div class="elemento">
+					<img src="imagenes/4.png">
+				</div>
+				<div class="elemento">
+					<img src="imagenes/5.png">
+				</div>
+				<div class="elemento">
+					<img src="imagenes/6.png">
+				</div>
+				<div class="elemento">
+					<img src="imagenes/7.png">
+				</div>
+				<div class="elemento">
+					<img src="imagenes/8.png">
+				</div>
+				<div class="elemento">
+					<img src="imagenes/9.png">
+				</div>
+				<div class="elemento">
+					<img src="imagenes/10.png">
+				</div>
+			</div>
+		</div>
+		
+		<section>
+			<article class="explicacion layout">
+				<figure><img src="imagenes/logo-play.png"></figure>
+				<h2>Imagenes</h2>
+				<p>Google Play recomienda que a la hora de subir una aplicación, añadamos varias capturas de pantalla de la misma, para que los usuarios interesados en descargarla puedan visualizarla antes de instalarla en su dispositivo.</p>
+				<p>Estas capturas de pantalla, podemos verlas a lo largo de todo este manual de instrucciones, pero además han sido añadidas en un slider, justo encima de este texto</p>
+			</article>
+
+			<article class="explicacion layout">
+				<figure><img src="imagenes/logo-youtube.jpg"></figure>
+				<h2>Video</h2>
+				<p>Google Play también pide subir un video con una demostracion del funcionamiento de la app. Aquí lo adjuntamos nosotros...</p>
+				<div class="video">
+					<iframe width="90%" src="https://www.youtube.com/embed/EvusiBzxNLg" frameborder="0" allowfullscreen></iframe>
+				</div>
+				
+			</article>
+
+			<article class="explicacion layout">
+				<figure><img src="imagenes/construccion.jpg"></figure>
+				<h2>Cambios para subir a Google Play</h2>
+				<p><b>RESPETAR LA PROPIEDAD INTELECTUAL.</b> Nuestra app contiene logotipos como el de la DGT que no tenemos autorización para utilizar.</p>
+				<p><b>SEGURIDAD Y CIFRADO</b> para el login de usuarios. También mejorarlo en el servidor, así como el cifrado de la base de datos, ya que cualquier hacker, puede inyectar codigo mysql y extraer las claves</p>
+				<p><b>ARREGLAR ARCHIVOS string.xml</b> En este archivo indicamos el texto para que según que lenguaje del dispositivo, pueda traducirse la aplicación</p>
+				<p><b>LAYOUTS PARA DISTINTOS TIPOS DE PANTALLA</b> Hay que adaptarlos a todos los tamaños de pantalla. Actualmente solo distingue entre horizontal y vertical. Igualmente con las imagenes, hay que añadirlas con diferentes resoluciones para que se vean adecuadamente en todas las pantallas</p>
+			</article>
+
+			<article class="explicacion layout">
+				<figure><img src="imagenes/idiomas.jpg"></figure>
+				<h2>Generar contenido en otro idioma</h2>
+				<p> Se puede añadir la traducción de la información de Google Play a la ap, haciendo click en "Gestionar Traduccion" cerca de la parte superior de la página "Ficha de Play Store"</p>
+				<p>Si no se realiza la traducción, puede ser traducido de forma automática por el traductor de google o ser visualizado en el idioma nativo de la app</p>
+				<p>Para comercializar la app en diferentes países, Google recomienda añadir las capturas de pantalla y video en diferentes idiomas.</p>
+				<p>En función de las preferencias de idioma marcadas por cada usuario en su dispositivo Android, le saldrá el video en un idioma u otro</p>
+			</article>
+
+
+			
+		</section>
+
+
+		<footer>
+			<span>&copy Antonio Delgado && Cristian Maier &copy </span>
+		</footer>
+
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>﻿
+
+		<script type="text/javascript">//<![CDATA[
+		$(function(){ 
+			$('#slider div:gt(0)').hide(); 
+			setInterval(function(){
+			       $('#slider div:first-child').fadeOut(0).next('div').fadeIn(1000).end().appendTo('#slider');}, 4000); 
+		}); 
+		//]]>
+		</script>﻿
+		
+	</body>
+
+</html>
